@@ -1,5 +1,5 @@
 pipeline {
-    agent { any }
+    agent any
     stages {
         stage('build') {
             steps {
@@ -8,7 +8,7 @@ pipeline {
         }
 		stage('Phy Test 1') {
             steps {
-                input "Configure Phy Layer 1 Instrument Test"
+                input message: "Configure Phy Layer 1 Instrument Test"
             }
         }
     }
