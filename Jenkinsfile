@@ -6,6 +6,11 @@ pipeline {
                 sh 'python hello1.py > ./Outputs/simulation_hello1.txt'
             }
         }
+		stage('Phy Test 1') {
+            steps {
+                input "Configure Phy Layer 1 Instrument Test"
+            }
+        }
     }
 	post {
         always {
