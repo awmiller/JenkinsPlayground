@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'python hello1.py'
+                sh 'python hello1.py > ./Outputs/sim_outputs.txt.sim'
             }
         }
     }
